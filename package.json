@@ -1,7 +1,7 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app is for anyone that wants a way to create and store notes on a webpage.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "keywords": []
 }
