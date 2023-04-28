@@ -7,18 +7,15 @@ const randomNum = uuid.v4();
 
 const PORT = process.env.PORT || 3000;
 
-
+// add note to notes
 function generateRandomNumber() {
     const newNoteId = randomNum.slice(0,4);
-  
     return newNoteId;
   }
 
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
@@ -36,6 +33,7 @@ app.get("/api/notes", (req, res) => {
 });
 
 
+// add json
 app.post("/api/notes", (req, res) => {
   fs.readFile("./db/db.json", "utf-8", (err, data) => {
     if (err) {
@@ -59,7 +57,6 @@ app.post("/api/notes", (req, res) => {
     }
   });
 });
-
 
 
 app.listen(PORT, () => console.log(`Listening at http://localhost:${PORT}`));

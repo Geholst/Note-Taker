@@ -1,7 +1,7 @@
 # Note-Taker
 
 ## Description
-This app is for anyone that wants a way to create and store notes on a webpage. 
+This app is for anyone that wants a way to create and store notes on a webpage. I didnt quite finish.
 
 ## Table of Contents 
 - [Installation](#installation)
